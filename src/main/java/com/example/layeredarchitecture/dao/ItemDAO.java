@@ -18,4 +18,5 @@ public interface ItemDAO {
     public ResultSet getAllItemCodes() throws SQLException, ClassNotFoundException ;
     public ResultSet getItem(String code) throws SQLException, ClassNotFoundException ;
     public ResultSet findItem(String newItemCode) throws SQLException, ClassNotFoundException ;
+    public PreparedStatement updateItem(Connection connection,ItemDTO item) throws SQLException ;
 }
