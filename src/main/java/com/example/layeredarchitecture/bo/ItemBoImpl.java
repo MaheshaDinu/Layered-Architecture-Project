@@ -23,24 +23,25 @@ public class ItemBoImpl implements ItemBO {
     }
 
     public boolean add(ItemDTO dto) throws SQLException, ClassNotFoundException {
-        
+        return itemDAO.add(dto);
 
     }
 
     public boolean update(ItemDTO dto) throws SQLException, ClassNotFoundException {
-
+        return itemDAO.update(dto);
     }
 
     public boolean exist(String code) throws SQLException, ClassNotFoundException {
-
+        return itemDAO.exist(code);
     }
 
     public String generateNewID() throws SQLException, ClassNotFoundException {
-
+        return itemDAO.generateNewID();
 
     }
 
     public ItemDTO search(String code) throws SQLException, ClassNotFoundException {
+        return itemDAO.search(code);
 
     }
 }
